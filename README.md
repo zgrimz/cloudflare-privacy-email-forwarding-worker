@@ -105,18 +105,3 @@ const YOUR_DOMAIN = "yourdomain.com";
 
 3. `YOUR_DOMAIN`: Your Cloudflare-managed domain
    - Example: `yourdomain.com`
-
-### How It Works
-
-After configuration:
-- Permanent addresses: `newsletter99@yourdomain.com` will forward indefinitely
-- Temporary addresses: `test20241231@yourdomain.com` will forward until December 31, 2024
-- Invalid patterns are silently dropped
-
-### Advanced Customization
-
-The worker code can be further customized to:
-- Modify the date pattern (default: "20YYMMDD")
-- Adjust logging verbosity for debugging
-- Add additional email patterns or rules
-- Change how expired emails are handled
