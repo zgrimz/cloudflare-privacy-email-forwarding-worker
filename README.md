@@ -85,6 +85,38 @@ news28+finance@yourdomain.org
 
 ## Configuration
 
-Edit the worker code to:
-- Change the verification code (default: "99")
-- Modify the destination email address
+At the top of the worker code, you'll find configuration variables that need to be customized:
+
+```javascript
+// Configuration - Change these values
+const VERIFICATION_CODE = "99";      // Your chosen verification code
+const DESTINATION_EMAIL = "your-private-email@example.com";
+const YOUR_DOMAIN = "yourdomain.com";
+```
+
+### Required Changes
+
+1. `VERIFICATION_CODE`: Your chosen pattern for permanent forwarding addresses
+   - Default: "99"
+   - Example: If set to "99", then `anything99@yourdomain.com` will forward
+
+2. `DESTINATION_EMAIL`: Your private email address where messages will be forwarded
+   - Example: `your-private-email@example.com`
+
+3. `YOUR_DOMAIN`: Your Cloudflare-managed domain
+   - Example: `yourdomain.com`
+
+### How It Works
+
+After configuration:
+- Permanent addresses: `newsletter99@yourdomain.com` will forward indefinitely
+- Temporary addresses: `test20241231@yourdomain.com` will forward until December 31, 2024
+- Invalid patterns are silently dropped
+
+### Advanced Customization
+
+The worker code can be further customized to:
+- Modify the date pattern (default: "20YYMMDD")
+- Adjust logging verbosity for debugging
+- Add additional email patterns or rules
+- Change how expired emails are handled
