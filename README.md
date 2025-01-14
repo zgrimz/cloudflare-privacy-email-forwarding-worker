@@ -1,4 +1,4 @@
-# Privacy-Enhanced Email Forwarding
+# Privacy-Enhanced Email Forwarding with Cloudflare Email Routing
 
 A privacy-focused email forwarding system that works with Cloudflare Email Routing, catch-all feature, and Email Workers. This script gives you access to controled temporary and permanent email addresses, while protecting your primary email from spam and data breaches, as well as abuse of the catch-all feature.
 
