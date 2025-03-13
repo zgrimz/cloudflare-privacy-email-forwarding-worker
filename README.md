@@ -73,14 +73,14 @@ trial20240131@yourdomain.org
 ### Permanent Address with Filtering
 ```
 # Shopping emails:
-shop28@yourdomain.org
-shop28+amazon@yourdomain.org
-shop28+ebay@yourdomain.org
+shop99@yourdomain.org
+shop99+amazon@yourdomain.org
+shop99+ebay@yourdomain.org
 
 # Newsletter subscriptions:
-news28@yourdomain.org
-news28+tech@yourdomain.org
-news28+finance@yourdomain.org
+news99@yourdomain.org
+news99+tech@yourdomain.org
+news99+finance@yourdomain.org
 ```
 
 ## Configuration
